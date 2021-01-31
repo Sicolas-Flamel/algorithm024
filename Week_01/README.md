@@ -52,3 +52,7 @@ $ ssh -T git@github.com
 第二次装时发现，它是可以自动检测到已装了什么什么。所以第一次没检测到 Git，不然也会提醒的。
 
 ![image-20210125181450619](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20210125181450619.png)
+
+
+# 反思
+这周有坚持每日打卡，但每天做的老题可能不够。下周要有所改进。
