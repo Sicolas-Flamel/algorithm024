@@ -1,0 +1,6 @@
+# 朴素的思路是用字典去存，然后一个一个加，如果字符 in key，value++。
+
+# 用了 python 的库，可以统计各个文本里的各个字符数。
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        return collections.Counter(s) == collections.Counter(t)
