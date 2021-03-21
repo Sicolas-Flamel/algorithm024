@@ -20,7 +20,17 @@ class Solution:
 # 1 generate one pair (); 
 # 2 generate 0 pair inside, n-1 afterward:(){n-1}个后面的，
 #   generate 1 pair inside, n-2 afterward:(())...
-#   generate i pair inside, n-i-1 afterward:(())...
+#   generate n-1 pair inside, 0vafterward:(())...
+
+"""
+As mentioned by the author, for all parenthesis combinations of size n, we need to generate:
+"( x } y" where x and y are combinations of brackets of that size and x + y = n-1
+
+Now if you want to generate say i brackets, that would be
+"( j } k" where j and k are combinations of brackets of that size and j + k = i-1
+Since j+k = i-1, k = i - j - 1
+And that's where the dp[i - j - 1] comes from
+"""
 
 class Solution:
      def generateParenthesis(self, n: int) -> List[str]:          
